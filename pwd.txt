@@ -1,0 +1,14 @@
+%user%
+%user%1
+%user%123
+%user%1234
+123
+1234
+12345
+123456
+password
+tymbark1
+welkom
+welkom01
+welkom123
+changeme

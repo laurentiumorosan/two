@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CONTOR=0
+total=`grep -c . $1`
+for i in `cat $1`
+do
+CONTOR=`ps x | grep -c bash`
+while [ $CONTOR -ge 500 ];do
+CONTOR=`ps x | grep -c bash`
+sleep 5
+done
+if [ $CONTOR -le 500 ]; then
+./bing-ip2hosts -n $i >> url.txt & 
+fi
+done
